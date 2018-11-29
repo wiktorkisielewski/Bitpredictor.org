@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>BitPredictor</title>
+</head>
+<body scroll="no" style="overflow: hidden">
+    <main>
+        <div class="title">
+            <img src="bitpredictor_logo.png" class="bitpredictor_logo">
+        </div>
+        <div class="sub">
+            <span class="submissions"></span>
+        </div>
+        <div class="formy">
+            <form action="store.php" method="POST">
+                <input type="number" step=".01" name="user_prediction" class="price_box" placeholder="Price prediction">
+                    <br>
+                <input type="text" name="user_address" class="address_box" placeholder="BTC Address">
+                    <br>
+                <input type="submit" value="SUBMIT" class="submit_box"/>
+                    <a href="faq.html" target="_blank" class="qm_box">
+                        <img src="q_mark.png" class="qm_img">
+                    </a>
+                <script src="https://authedmine.com/lib/captcha.min.js" async></script>
+                    <div class="coinhive-captcha" 
+                        data-hashes="1024" 
+                        data-key="buqLZBp3gXyFLvLgLzJqSFjUqxAgt6Jv"
+                        data-whitelabel="false"
+                        data-disable-elements="input[type=submit]"
+                        data-callback="myCaptchaCallback"
+                    >
+                        <em>Loading Captcha...<br>
+                        If it doesn't load, please disable Adblock!</em>
+                    </div>
+            </form>   
+        </div>
+    </main>
+    <script src="prize.js"></script>
+    <iframe id="frame" src="storage.html" height="0" width="0">
+    </iframe>
+    <footer>
+        <div class="bottom_box">
+            <div class="bottom_text">
+                <span class="bottom_font">Time left : <span id="countdown" class="bottom_font"></span>
+                <span class="bottom_font">Current prize : </span>
+                <span class="bottom_font" id="cumulation"></span>
+                <span class="bottom_font"> Satoshis</span>
+            </div>
+            <div class="twitter">
+                <div class="social">
+                    <a href="" target="_blank">
+                        <span class="me">Creator:</span><br>
+                        <span class="me_s">WIKTOR KISIELEWSKI</span>
+                    </a>
+                    <a href="https://twitter.com/bitpredictor" target="_blank">
+                        <img src='twittertrans.png' onmouseover="this.src='twittertrans_b.png';" onmouseout="this.src='twittertrans.png';" class="logo_t" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="countdown.js"></script>
+</body>
